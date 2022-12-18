@@ -1,10 +1,10 @@
-import { Category } from "../models/Category";
+import { Category } from "../model/Category";
 import {
   ICategoriesRepository,
   ICreateCategoryDTO,
-} from "./ICategoryRepository";
+} from "./ICategoriesRepository";
 
-class PostgressCategoriesRepositories implements ICategoriesRepository {
+class PostgressCategoriesRepository implements ICategoriesRepository {
   findByName(name: string): Category {
     throw new Error("Method not implemented.");
   }
@@ -16,4 +16,4 @@ class PostgressCategoriesRepositories implements ICategoriesRepository {
   }
 }
 
-export { PostgressCategoriesRepositories };
+export { PostgressCategoriesRepository };
